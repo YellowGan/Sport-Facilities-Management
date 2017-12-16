@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerVisualizzaCalendarioTorneo">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright © Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nomeTorneo" alignment="CENTER" prefHeight="45.0" prefWidth="266.0" text="nomeTorneo" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <ImageView fx:id="tornaHome" fitHeight="104.0" fitWidth="118.0" onMouseClicked="#tornaHome" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@yellow-house.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Label text="TORNA ALLA HOME" textFill="#d6ae51">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="409.0" prefWidth="630.0" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="75.0" right="100.0" top="50.0" />
+         </BorderPane.margin>
+         <children>
+            <TableView fx:id="tabCalendarioStatistiche" editable="true" prefHeight="460.0" prefWidth="743.0">
+              <columns>
+                <TableColumn fx:id="idPartita" minWidth="0.0" onEditStart="#modificaStatistiche" prefWidth="155.0" text="ID Partita" />
+                <TableColumn fx:id="squadraCasa" minWidth="0.0" prefWidth="195.0" text="Squadra in casa" />
+                  <TableColumn fx:id="squadraTrasferta" prefWidth="197.0" text="Squadra in trasferta" />
+                  <TableColumn fx:id="data" minWidth="0.0" prefWidth="102.0" text="Data" />
+                  <TableColumn fx:id="risultatoPartita" prefWidth="93.0" text="Risultato" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

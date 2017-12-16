@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerLogin">
+   <children>
+      <Label fx:id="info1" layoutX="87.0" layoutY="85.0" prefHeight="25.0" prefWidth="112.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Label fx:id="info11" layoutX="315.0" layoutY="85.0" prefHeight="25.0" prefWidth="112.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Username" layoutX="50.0" layoutY="125.0" promptText="Username" />
+      <TextField fx:id="Password" layoutX="278.0" layoutY="125.0" promptText="Password" />
+      <Label fx:id="errore" layoutX="169.0" layoutY="167.0" text="Username e/o password errati!" textFill="WHITE" visible="false" />
+      <Button fx:id="Login" layoutX="150.0" layoutY="190.0" mnemonicParsing="false" onAction="#login" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white;" text="Login">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</Pane>

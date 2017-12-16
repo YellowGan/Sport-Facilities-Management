@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerCreaTorneo">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright © Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="256.0" layoutY="63.0" prefHeight="30.0" prefWidth="200.0" text="Nome del Torneo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="234.0" layoutY="154.0" prefWidth="250.0" text="Descrizione del Torneo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="234.0" layoutY="253.0" prefWidth="250.0" text="Data di inizio del Torneo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="255.0" layoutY="346.0" prefWidth="200.0" text="Tipo del Torneo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="190.0" layoutY="439.0" prefWidth="350.0" text="Numero massimo di squadre iscritte" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomeTorneo" layoutX="712.0" layoutY="63.0" prefHeight="30.0" prefWidth="250.0" />
+            <TextArea fx:id="descrizione" layoutX="628.0" layoutY="121.0" prefHeight="100.0" prefWidth="400.0" />
+            <DatePicker fx:id="dataInizio" layoutX="712.0" layoutY="252.0" prefHeight="30.0" prefWidth="250.0" />
+            <ComboBox fx:id="tipoTorneo" layoutX="712.0" layoutY="346.0" prefHeight="30.0" prefWidth="250.0" />
+            <TextField fx:id="maxIscrizioni" layoutX="712.0" layoutY="439.0" prefHeight="30.0" prefWidth="250.0" />
+            <Button fx:id="salva" layoutX="265.0" layoutY="500.0" mnemonicParsing="false" onAction="#salva" prefHeight="30.0" prefWidth="150.0" text="Salva">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="annulla" layoutX="765.0" layoutY="500.0" mnemonicParsing="false" onAction="#annulla" prefHeight="30.0" prefWidth="150.0" text="Annulla">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

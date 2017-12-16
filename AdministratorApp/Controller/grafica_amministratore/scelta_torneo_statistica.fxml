@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerSceltaTorneoStatistica">
+   <children>
+      <Label fx:id="info1" layoutX="31.0" layoutY="87.0" prefHeight="25.0" prefWidth="439.0" text="Selezionare Torneo in cui bisogna aggiungere delle statistiche" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="avanti" layoutX="66.0" layoutY="180.0" mnemonicParsing="false" onAction="#avanti" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white;" text="Avanti">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="indietro" layoutX="284.0" layoutY="180.0" mnemonicParsing="false" onAction="#indietro" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white;" text="Indietro">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <ComboBox fx:id="tornei" layoutX="151.0" layoutY="134.0" prefWidth="200.0" />
+   </children>
+</Pane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerSceltaAzioneTorneo">
+   <children>
+      <Label fx:id="info1" layoutX="33.0" layoutY="90.0" prefHeight="25.0" prefWidth="434.0" text="Selezionare azione da svolgere per quanto riguarda il torneo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="nomeTorneo" layoutX="226.0" layoutY="125.0" text="torneo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="chiudiIscrizioni" layoutX="12.5" layoutY="180.0" mnemonicParsing="false" onAction="#chiudiIscrizioni" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white;" text="Chiudi iscrizioni">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button fx:id="aggiungiPartita" layoutX="175.0" layoutY="180.0" mnemonicParsing="false" onAction="#aggiungiPartita" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white;" text="Aggiungi partita">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Button fx:id="torna" layoutX="337.5" layoutY="180.0" mnemonicParsing="false" onAction="#torna" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: white;" text="Torna Indietro">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</Pane>

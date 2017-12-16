@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerHome">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="398.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="302.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="2.0" right="2.0" top="96.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@cup_home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="tornei" mnemonicParsing="false" onAction="#tornei" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: white;" text="TORNEI">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <VBox.margin>
+                  <Insets left="22.0" right="22.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright © Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="486.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="35.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="290.0" fitWidth="410.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="110.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@campo_home.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="prenotazioni" mnemonicParsing="false" onAction="#prenotazioni" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: white;" text="PRENOTAZIONI CAMPI">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="35.0" />
+         </BorderPane.margin>
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@statistiche_home.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="110.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="statistiche" mnemonicParsing="false" onAction="#statistiche" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: white;" text="STATISTICHE PARTITE">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="65.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="754.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Amministratore.Controller.ControllerStatisticheTorneo">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright © Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox prefHeight="568.0" prefWidth="1218.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label fx:id="nomeTorneo" alignment="CENTER" prefWidth="400.0" text="Torneo" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="200.0">
+               <children>
+                  <Label fx:id="nomeCasa" alignment="CENTER" prefWidth="400.0" text="Squadra casa" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="nomeTrasferta" alignment="CENTER" prefWidth="400.0" text="Squadra trasferta" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="200.0">
+               <children>
+                  <Label alignment="CENTER" prefWidth="400.0" text="Risultato finale" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <TextField fx:id="risultatoCasa" prefWidth="100.0" />
+                  <Label text="-" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="risultatoTrasferta" prefWidth="100.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="235.0">
+               <children>
+                  <HBox>
+                     <children>
+                        <Label text="Goal F." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Goal S." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Amm." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Esp." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label text="Goal F." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Goal S." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Amm." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label text="Esp." textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" spacing="4.0">
+                     <children>
+                        <Label fx:id="giocatoreCasa1" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa2" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa3" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa4" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa5" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa6" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa7" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa8" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa9" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa10" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa11" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa12" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa13" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreCasa14" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="goalFattiCasa1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiCasa14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="22.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="goalSubitiCasa1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiCasa14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="ammonitiCasa1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiCasa14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="espulsoCasa1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoCasa14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="goalFattiTrasferta1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalFattiTrasferta14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="192.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="goalSubitiTrasferta1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="goalSubitiTrasferta14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="ammonitiTrasferta1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="ammonitiTrasferta14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="75.0">
+                     <children>
+                        <TextField fx:id="espulsoTrasferta1" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta2" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta3" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta4" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta5" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta6" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta7" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta8" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta9" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta10" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta11" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta12" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta13" prefHeight="21.0" prefWidth="75.0" />
+                        <TextField fx:id="espulsoTrasferta14" prefHeight="21.0" prefWidth="75.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" spacing="4.0">
+                     <children>
+                        <Label fx:id="giocatoreTrasferta1" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta2" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta3" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta4" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta5" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta6" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta7" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta8" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta9" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta10" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta11" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta12" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta13" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="giocatoreTrasferta14" alignment="CENTER" prefHeight="25.0" prefWidth="200.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" spacing="100.0">
+               <children>
+                  <Button fx:id="salva" mnemonicParsing="false" onAction="#salva" prefWidth="100.0" style="-fx-background-color: white;" text="Salva">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="annulla" mnemonicParsing="false" onAction="#annulla" prefWidth="100.0" style="-fx-background-color: white;" text="Annulla">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
