@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerAvvisoIscrizione">
+   <children>
+      <Label fx:id="info1" layoutX="32.0" layoutY="84.0" prefHeight="25.0" prefWidth="300.0" text="Sei sicuro di voler iscrivere la squadra" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="squadra" layoutX="312.0" layoutY="84.0" prefHeight="25.0" prefWidth="134.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="info2" layoutX="72.0" layoutY="124.0" text="al torneo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="torneo" layoutX="175.0" layoutY="124.0" prefHeight="25.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="info3" layoutX="372.0" layoutY="124.0" text="?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="conferma" layoutX="121.0" layoutY="177.0" mnemonicParsing="false" onAction="#conferma" prefWidth="87.0" text="Conferma" />
+      <Button fx:id="annulla" layoutX="304.0" layoutY="177.0" mnemonicParsing="false" onAction="#annulla" prefWidth="76.0" text="Annulla" />
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Label fx:id="confermaIscrizione" layoutX="100.0" layoutY="113.0" prefHeight="25.0" prefWidth="300.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok" layoutX="225.0" layoutY="177.0" mnemonicParsing="false" onAction="#annulla" prefHeight="31.0" prefWidth="50.0" text="OK" visible="false" />
+   </children>
+</Pane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerCreaSquadra">
+   <children>
+      <Label fx:id="info2" layoutX="126.0" layoutY="100.0" text="Salvataggio avvenuto con successo" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok" layoutX="207.0" layoutY="157.0" mnemonicParsing="false" onAction="#ok" prefHeight="31.0" prefWidth="87.0" text="OK" />
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+   </children>
+</Pane>

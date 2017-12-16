@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.Controller">
+   <children>
+      <ImageView fitHeight="705.0" fitWidth="1235.0" layoutX="0.0" layoutY="0.0" preserveRatio="true">
+         <image>
+            <Image url="@teaser-image-3.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nickLogin" layoutX="33.0" layoutY="40.0" prefHeight="14.0" prefWidth="154.0" promptText="Nickname" />
+      <PasswordField fx:id="passLogin" layoutX="196.0" layoutY="40.0" prefHeight="14.0" prefWidth="154.0" promptText="Password" />
+      <Label layoutX="33.0" layoutY="21.0" prefHeight="21.0" prefWidth="97.0" text="Nome utente" textFill="WHITE" />
+      <Label layoutX="192.0" layoutY="21.0" prefHeight="21.0" prefWidth="72.0" text="Password" textFill="WHITE" />
+      <Label layoutX="33.0" layoutY="96.0" prefHeight="57.0" prefWidth="432.0" text="ISCRIVITI" textFill="WHITE">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="68.0" prefHeight="38.0" prefWidth="195.0" text="Non sei registrato?" textFill="WHITE" />
+      <TextField fx:id="nomeIscriviti" layoutX="33.0" layoutY="159.0" prefHeight="31.0" prefWidth="154.0" promptText="Nome" />
+      <TextField fx:id="cognomeIscriviti" layoutX="196.0" layoutY="159.0" prefHeight="31.0" prefWidth="154.0" promptText="Cognome" />
+      <TextField fx:id="nickIscriviti" layoutX="33.0" layoutY="199.0" prefHeight="31.0" prefWidth="317.0" promptText="Nickname" />
+      <PasswordField fx:id="passIscriviti" layoutX="33.0" layoutY="239.0" prefHeight="31.0" prefWidth="317.0" promptText="Password" />
+      <TextField fx:id="email" layoutX="33.0" layoutY="279.0" prefHeight="31.0" prefWidth="317.0" promptText="E-mail" />
+      <TextField fx:id="conf_email" layoutX="33.0" layoutY="319.0" prefHeight="31.0" prefWidth="317.0" promptText="Conferma e-mail" />
+      <ComboBox fx:id="gg" layoutX="98.0" layoutY="367.0" prefHeight="25.0" prefWidth="80.0" promptText="GG" visibleRowCount="9">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+            <String fx:value="1" />
+            <String fx:value="2" />
+            <String fx:value="3" />
+            <String fx:value="4" />
+            <String fx:value="5" />
+            <String fx:value="6" />
+            <String fx:value="7" />
+            <String fx:value="8" />
+            <String fx:value="9" />
+            <String fx:value="10" />
+            <String fx:value="11" />
+            <String fx:value="12" />
+            <String fx:value="13" />
+            <String fx:value="14" />
+            <String fx:value="15" />
+            <String fx:value="16" />
+            <String fx:value="17" />
+            <String fx:value="18" />
+            <String fx:value="19" />
+            <String fx:value="20" />
+            <String fx:value="21" />
+            <String fx:value="22" />
+            <String fx:value="23" />
+            <String fx:value="24" />
+            <String fx:value="25" />
+            <String fx:value="26" />
+            <String fx:value="27" />
+            <String fx:value="28" />
+            <String fx:value="29" />
+            <String fx:value="30" />
+            <String fx:value="31" />
+            </FXCollections>
+        </items>
+      </ComboBox>
+      <ComboBox fx:id="mm" layoutX="184.0" layoutY="367.0" prefHeight="25.0" prefWidth="80.0" promptText="MM" visibleRowCount="9">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+            <String fx:value="1" />
+            <String fx:value="2" />
+            <String fx:value="3" />
+            <String fx:value="4" />
+            <String fx:value="5" />
+            <String fx:value="6" />
+            <String fx:value="7" />
+            <String fx:value="8" />
+            <String fx:value="9" />
+            <String fx:value="10" />
+            <String fx:value="11" />
+            <String fx:value="12" />
+            </FXCollections>
+        </items>
+      </ComboBox>
+      <ComboBox fx:id="aa" layoutX="270.0" layoutY="367.0" prefHeight="25.0" prefWidth="80.0" promptText="AA" visibleRowCount="9">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+            <String fx:value="2015" />
+            <String fx:value="2014" />
+            <String fx:value="2013" />
+            <String fx:value="2012" />
+            <String fx:value="2011" />
+            <String fx:value="2010" />
+            <String fx:value="2009" />
+            <String fx:value="2008" />
+            <String fx:value="2007" />
+            <String fx:value="2006" />
+            <String fx:value="2005" />
+            <String fx:value="2004" />
+            <String fx:value="2003" />
+            <String fx:value="2002" />
+            <String fx:value="2001" />
+            <String fx:value="2000" />
+            <String fx:value="1999" />
+            <String fx:value="1998" />
+            <String fx:value="1997" />
+            <String fx:value="1996" />
+            <String fx:value="1995" />
+            <String fx:value="1994" />
+            <String fx:value="1993" />
+            <String fx:value="1992" />
+            <String fx:value="1991" />
+            <String fx:value="1990" />
+            <String fx:value="1989" />
+            <String fx:value="1988" />
+            <String fx:value="1987" />
+            <String fx:value="1986" />
+            <String fx:value="1985" />
+            <String fx:value="1984" />
+            <String fx:value="1983" />
+            <String fx:value="1982" />
+            <String fx:value="1981" />
+            <String fx:value="1980" />
+            <String fx:value="1979" />
+            <String fx:value="1978" />
+            <String fx:value="1977" />
+            <String fx:value="1976" />
+            <String fx:value="1975" />
+            <String fx:value="1974" />
+            <String fx:value="1973" />
+            <String fx:value="1972" />
+            <String fx:value="1971" />
+            <String fx:value="1970" />
+            <String fx:value="1969" />
+            <String fx:value="1968" />
+            <String fx:value="1967" />
+            <String fx:value="1966" />
+            <String fx:value="1965" />
+            <String fx:value="1964" />
+            <String fx:value="1963" />
+            <String fx:value="1962" />
+            <String fx:value="1961" />
+            <String fx:value="1960" />
+            <String fx:value="1959" />
+            <String fx:value="1958" />
+            <String fx:value="1957" />
+            <String fx:value="1956" />
+            <String fx:value="1955" />
+            <String fx:value="1954" />
+            <String fx:value="1953" />
+            <String fx:value="1952" />
+            <String fx:value="1951" />
+            <String fx:value="1950" />
+            
+            </FXCollections>
+        </items>
+      </ComboBox>
+      <Button fx:id="Iscriviti" layoutX="33.0" layoutY="416.0" mnemonicParsing="false" onAction="#Iscriviti" prefHeight="65.0" prefWidth="317.0" style="-fx-background-color: #282828;" text="Iscriviti" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="33.0" layoutY="364.0" prefHeight="31.0" prefWidth="57.0" text="Nato il " textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="219.0" fitWidth="317.0" layoutX="42.0" layoutY="481.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@buffon-in-azione.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Login" layoutX="364.0" layoutY="37.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #282828;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="campiVuoti" layoutX="364.0" layoutY="183.0" prefHeight="144.0" prefWidth="295.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="loginErrato" layoutX="451.0" layoutY="24.0" prefHeight="57.0" prefWidth="317.0" textAlignment="CENTER" textFill="WHITE" />
+   </children>
+</Pane>

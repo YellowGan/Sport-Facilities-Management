@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerPagine">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <DatePicker fx:id="vis_data" onAction="#visData">
+               <VBox.margin>
+                  <Insets left="15.0" top="40.0" />
+               </VBox.margin>
+            </DatePicker>
+            <TableView fx:id="tabella_prenotazioni" editable="true" prefHeight="460.0">
+              <columns>
+                <TableColumn fx:id="fasciaOraria" onEditStart="#confermaPrenotazioni" prefWidth="192.0" text="Fascia oraria" />
+                <TableColumn fx:id="stato" editable="false" prefWidth="290.0" text="Stato" />
+                  <TableColumn fx:id="prenotatoDa" editable="false" prefWidth="221.0" text="Prenotato da" />
+                  <TableColumn fx:id="tipoPartita" editable="false" prefWidth="260.0" text="Tipo partita" />
+              </columns>
+               <VBox.margin>
+                  <Insets left="15.0" right="30.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <Pane prefHeight="497.0" prefWidth="209.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="LCalcio5" layoutY="5.0" prefHeight="65.0" prefWidth="212.0" text="CAMPO CALCIO A 5" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LCalcio7" layoutY="5.0" prefHeight="65.0" prefWidth="212.0" text="CAMPO CALCIO A 7" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="40.0" />
+               </padding>
+            </Label>
+            <Label fx:id="LCalcio11" layoutX="-3.0" layoutY="5.0" prefHeight="65.0" prefWidth="220.0" text="CAMPO CALCIO A 11" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="40.0" />
+               </padding>
+            </Label>
+            <ImageView fx:id="tornaHome" fitHeight="104.0" fitWidth="118.0" layoutX="46.0" layoutY="195.0" onMouseClicked="#tornaHome">
+               <image>
+                  <Image url="@yellow-house.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Label fx:id="LCalcio111" layoutX="-3.0" layoutY="267.0" prefHeight="65.0" prefWidth="220.0" text="TORNA ALLA HOME" textFill="#d6ae51">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" right="30.0" top="40.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

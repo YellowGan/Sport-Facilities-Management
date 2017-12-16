@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerPagine">
+  <tabs>
+    <Tab text="HOME">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <bottom>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </bottom>
+               <top>
+                  <Label prefHeight="30.0" prefWidth="343.0" text="Benvenuto su campi yellow" textAlignment="CENTER" textFill="WHITE" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Cooper Black" size="24.0" />
+                     </font>
+                     <BorderPane.margin>
+                        <Insets top="50.0" />
+                     </BorderPane.margin>
+                  </Label>
+               </top>
+               <right>
+                  <VBox alignment="CENTER" prefHeight="544.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="260.0" fitWidth="264.0">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets right="100.0" />
+                           </VBox.margin>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </right>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Informazioni profilo" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets left="370.0" top="25.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cooper Black" size="24.0" />
+                           </font>
+                        </Label>
+                        <HBox prefHeight="25.0" prefWidth="854.0">
+                           <children>
+                              <Label text="Nome :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="nome" layoutX="260.0" layoutY="60.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="300.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="64.0" prefHeight="39.0" prefWidth="854.0">
+                           <children>
+                              <Label text="Cognome :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="cognome" layoutX="260.0" layoutY="60.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="259.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="64.0" prefHeight="34.0" prefWidth="854.0">
+                           <children>
+                              <Label text="Username :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="username" layoutX="260.0" layoutY="60.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="250.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="64.0" prefHeight="25.0" prefWidth="854.0">
+                           <children>
+                              <Label text="E-Mail :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="email" layoutX="260.0" layoutY="60.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="299.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="64.0" prefHeight="45.0" prefWidth="854.0">
+                           <children>
+                              <Label text="Data di nascita :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="data" layoutX="260.0" layoutY="60.0" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cooper Black" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="195.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+            </BorderPane>
+         </content>
+    </Tab>
+    <Tab text="CampiYellow">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <left>
+                  <VBox alignment="CENTER" prefHeight="561.0" prefWidth="171.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Telefono:" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="00000000000" textFill="WHITE" />
+                        <Label text="Cellulare" textFill="WHITE" />
+                        <Label layoutY="287.0" text="00000000000" textFill="WHITE" />
+                        <Label textFill="WHITE" />
+                        <Label text="Indirizzo:" textFill="WHITE" />
+                        <Label text="Via..........n°......" textFill="WHITE" />
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="30.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="555.0" fitWidth="932.0">
+                           <image>
+                              <Image url="@mappa.jpg" />
+                           </image>
+                        </ImageView>
+                     </children></VBox>
+               </center>
+               <bottom>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </content>
+    </Tab>
+      <Tab text="PRENOTA">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <left>
+                  <VBox alignment="TOP_CENTER" prefHeight="486.0" prefWidth="310.0" BorderPane.alignment="TOP_CENTER">
+                     <BorderPane.margin>
+                        <Insets left="28.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <ImageView fitHeight="265.0" fitWidth="375.0">
+                           <image>
+                              <Image url="@calcio5.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="110.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="Calcio5" mnemonicParsing="false" onAction="#Calcio5" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: WHITE;" text="CAMPO CALCIO A 5">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="314.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="302.0" fitWidth="410.0">
+                           <image>
+                              <Image url="@calcio7.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="2.0" right="2.0" top="96.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="Calcio7" mnemonicParsing="false" onAction="#Calcio7" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: WHITE;" text="CAMPO CALCIO A 7">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="22.0" right="22.0" top="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="35.0" />
+                     </BorderPane.margin>
+                     <children>
+                        <ImageView fitHeight="265.0" fitWidth="375.0">
+                           <image>
+                              <Image url="@calcio11.jpg" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="110.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button fx:id="Calcio11" mnemonicParsing="false" onAction="#Calcio11" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: WHITE;" text="CAMPO CALCIO A 11">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </right>
+               <bottom>
+                  <HBox BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </bottom></BorderPane>
+         </content>
+      </Tab>
+      <Tab text="ISCRIVI SQUADRA">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <left>
+                  <TableView fx:id="tabMiaSquadra" editable="true" prefHeight="471.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="mySquadra" onEditStart="#modificaSquadra" prefWidth="252.0" text="Mie squadre" />
+                        <TableColumn fx:id="capitano" editable="false" onEditStart="#modificaSquadra" prefWidth="243.0" text="Capitano squadra" />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" top="50.0" />
+                     </BorderPane.margin>
+                  </TableView>
+               </left>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="newSquadra" mnemonicParsing="false" onAction="#newSquadra" prefHeight="30.0" prefWidth="200.0" text="Crea nuova squadra">
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="iscriviSquadra" mnemonicParsing="false" onAction="#iscriviSquadra" text="Iscrivi squadra al Torneo">
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center></BorderPane>
+         </content>
+      </Tab>
+      <Tab text="TORNEI">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <left>
+                  <TableView fx:id="tabTornei" editable="true" prefHeight="471.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn fx:id="tornei" onEditStart="#selezionaTorneo" prefWidth="236.0" text="Tornei in corso / in programma" />
+                        <TableColumn fx:id="dataInizio" prefWidth="117.0" text="Data Inizio" />
+                        <TableColumn fx:id="tipoTorneo" prefWidth="146.0" text="Tipo torneo" />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets bottom="50.0" left="50.0" top="50.0" />
+                     </BorderPane.margin>
+                  </TableView>
+               </left>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="torneiTerminati" mnemonicParsing="false" onAction="#torneiTerminati" prefHeight="30.0" prefWidth="200.0" text="Tornei terminati">
+                           <VBox.margin>
+                              <Insets top="100.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center></BorderPane>
+         </content>
+      </Tab>
+      <Tab text="Software">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3D5C20;">
+               <center>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="CampiYellow v1.0" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label text="Realizzato da Di Pietro Nazzareno &amp; Gangemi Salvatore" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label text="Tutti i diritti riservati" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </center></BorderPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

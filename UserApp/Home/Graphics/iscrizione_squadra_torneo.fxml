@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerIscrizioneTorneo">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" spacing="150.0">
+               <children>
+                  <Label text="Seleziona Torneo" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="tornei" prefWidth="150.0" promptText="Torneo" />
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" spacing="150.0">
+               <children>
+                  <Label text="Seleziona una &quot;Mia squadra&quot; da far partecipare al torneo" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="squadra" prefWidth="150.0" promptText="Squadra">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" spacing="100.0">
+               <children>
+                  <Button fx:id="iscrivi" mnemonicParsing="false" onAction="#iscrivi" prefHeight="30.0" prefWidth="150.0" text="Iscrivi" />
+                  <Button fx:id="annulla" mnemonicParsing="false" onAction="#annulla" prefHeight="30.0" prefWidth="150.0" text="Annulla" />
+               </children>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

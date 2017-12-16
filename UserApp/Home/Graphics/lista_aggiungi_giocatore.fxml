@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerCercaGiocatori">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="TOP_CENTER" spacing="50.0">
+               <children>
+                  <TextField fx:id="cercaNick" promptText="Nickname" />
+                  <Button fx:id="cerca" mnemonicParsing="false" onAction="#cerca" text="Cerca" />
+               </children>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </HBox>
+            <Button fx:id="home" mnemonicParsing="false" onAction="#tornaIndietro" prefHeight="30.0" prefWidth="200.0" text="Torna indietro">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright :copyright: Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <right>
+      <TableView fx:id="tabRicerca" editable="true" prefHeight="200.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="nick" onEditStart="#selezioneGiocatori" prefWidth="300.0" text="Nickname" />
+            <TableColumn fx:id="nomeCognome" prefWidth="350.0" text="Nome e Cognome" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="50.0" right="50.0" top="50.0" />
+         </BorderPane.margin>
+      </TableView>
+   </right>
+</BorderPane>

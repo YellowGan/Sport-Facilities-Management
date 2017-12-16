@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerAggiungiGiocatori">
+   <children>
+      <Label fx:id="info1" layoutX="107.0" layoutY="100.0" prefHeight="25.0" prefWidth="287.0" text="La squadra è stata salvata con successo!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Button fx:id="ok" layoutX="207.0" layoutY="170.0" mnemonicParsing="false" onAction="#ok" prefHeight="31.0" prefWidth="87.0" text="OK" />
+   </children>
+</Pane>

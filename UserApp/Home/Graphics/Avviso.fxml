@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerAvviso">
+   <children>
+      <Label fx:id="info1" layoutX="37.0" layoutY="74.0" prefHeight="25.0" prefWidth="300.0" text="Sei sicuro di prenotare il campo giorno" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="data" layoutX="342.0" layoutY="74.0" prefWidth="100.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="info2" layoutX="77.0" layoutY="114.0" text="durante la fascia oraria" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="fascia" layoutX="262.0" layoutY="114.0" prefWidth="100.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="377.0" layoutY="114.0" text="?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="Conferma" layoutX="137.0" layoutY="165.0" mnemonicParsing="false" onAction="#Conferma" prefHeight="31.0" prefWidth="87.0" text="Conferma" />
+      <Button fx:id="Annulla" layoutX="287.0" layoutY="165.0" mnemonicParsing="false" onAction="#Annulla" prefHeight="31.0" prefWidth="76.0" text="Annulla" />
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Label fx:id="esito" layoutX="86.0" layoutY="113.0" prefHeight="25.0" prefWidth="329.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

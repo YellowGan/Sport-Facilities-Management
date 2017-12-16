@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerCreaSquadra">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright : Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <Label layoutX="453.0" layoutY="144.0" text="Nome" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="219.0" text="Colore divisa" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nomeSquadra" layoutX="578.0" layoutY="144.0" />
+            <TextField fx:id="coloreDivisa" layoutX="578.0" layoutY="213.0" />
+            <TextField fx:id="capitano" layoutX="578.0" layoutY="282.0" />
+            <Button fx:id="salvaNome" layoutX="422.0" layoutY="396.0" mnemonicParsing="false" onAction="#salvaNome" prefHeight="30.0" prefWidth="100.0" text="Salva" />
+            <Button fx:id="annulla" layoutX="697.0" layoutY="396.0" mnemonicParsing="false" onAction="#annulla" prefHeight="30.0" prefWidth="100.0" text="Annulla" />
+            <Label layoutX="453.0" layoutY="282.0" text="Capitano" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomePresente" layoutX="483.0" layoutY="346.0" prefHeight="25.0" prefWidth="252.0" text="Nome della squadra già presente" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

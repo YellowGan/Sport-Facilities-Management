@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerTorneoEliminazione">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright : Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nomeTorneo" text="Nome torneo" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="tipoTorneo" text="Tipo torneo" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="tastoTabellone" mnemonicParsing="false" onAction="#tastoTabellone" prefHeight="50.0" prefWidth="250.0" text="Calendario partite">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="tornaHome" fitHeight="104.0" fitWidth="118.0" onMouseClicked="#tornaHome" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <image>
+                  <Image url="@yellow-house.png" />
+               </image>
+            </ImageView>
+            <Label text="TORNA ALLA HOME" textFill="#d6ae51">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane prefHeight="489.0" prefWidth="918.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="50.0" top="30.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="squadra1" alignment="CENTER" layoutX="10.0" layoutY="20.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra2" alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV12" alignment="CENTER" layoutX="120.0" layoutY="40.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraVincente" alignment="CENTER" layoutX="359.0" layoutY="40.0" prefHeight="20.0" prefWidth="200.0" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="409.0" layoutY="10.0" prefHeight="20.0" prefWidth="100.0" text="Winner" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="squadraV14" alignment="CENTER" layoutX="240.0" layoutY="100.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV34" alignment="CENTER" layoutX="120.0" layoutY="160.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV56" alignment="CENTER" layoutX="120.0" layoutY="280.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV78" alignment="CENTER" layoutX="120.0" layoutY="400.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra3" alignment="CENTER" layoutX="10.0" layoutY="141.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra4" alignment="CENTER" layoutX="10.0" layoutY="180.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra5" alignment="CENTER" layoutX="10.0" layoutY="260.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra6" alignment="CENTER" layoutX="10.0" layoutY="300.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra7" alignment="CENTER" layoutX="20.0" layoutY="380.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra8" alignment="CENTER" layoutX="13.0" layoutY="420.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV58" alignment="CENTER" layoutX="240.0" layoutY="340.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV18" alignment="CENTER" layoutX="350.0" layoutY="220.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV916" alignment="CENTER" layoutX="468.0" layoutY="220.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV1316" alignment="CENTER" layoutX="578.0" layoutY="340.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV912" alignment="CENTER" layoutX="578.0" layoutY="100.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV1516" alignment="CENTER" layoutX="698.0" layoutY="400.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV1314" alignment="CENTER" layoutX="698.0" layoutY="280.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV1112" alignment="CENTER" layoutX="698.0" layoutY="160.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadraV910" alignment="CENTER" layoutX="698.0" layoutY="40.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra16" alignment="CENTER" layoutX="808.0" layoutY="420.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra15" alignment="CENTER" layoutX="808.0" layoutY="380.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra14" alignment="CENTER" layoutX="808.0" layoutY="300.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra13" alignment="CENTER" layoutX="808.0" layoutY="260.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra12" alignment="CENTER" layoutX="808.0" layoutY="180.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra11" alignment="CENTER" layoutX="808.0" layoutY="140.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra10" alignment="CENTER" layoutX="808.0" layoutY="60.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Label fx:id="squadra9" alignment="CENTER" layoutX="808.0" layoutY="20.0" prefHeight="20.0" prefWidth="100.0" textFill="WHITE" />
+            <Separator layoutX="110.0" layoutY="20.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="110.0" layoutY="140.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="110.0" layoutY="260.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="110.0" layoutY="380.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="802.0" layoutY="20.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="802.0" layoutY="140.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="802.0" layoutY="260.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="802.0" layoutY="380.0" orientation="VERTICAL" prefHeight="60.0" />
+            <Separator layoutX="220.0" layoutY="40.0" orientation="VERTICAL" prefHeight="140.0" />
+            <Separator layoutX="220.0" layoutY="280.0" orientation="VERTICAL" prefHeight="140.0" />
+            <Separator layoutX="692.0" layoutY="40.0" orientation="VERTICAL" prefHeight="140.0" />
+            <Separator layoutX="692.0" layoutY="280.0" orientation="VERTICAL" prefHeight="140.0" />
+            <Separator layoutX="340.0" layoutY="100.0" orientation="VERTICAL" prefHeight="260.0" />
+            <Separator layoutX="578.0" layoutY="100.0" orientation="VERTICAL" prefHeight="260.0" />
+            <Separator layoutX="13.0" layoutY="20.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="80.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="140.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="200.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="260.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="320.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="380.0" prefWidth="100.0" />
+            <Separator layoutX="13.0" layoutY="440.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="20.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="80.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="140.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="200.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="260.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="320.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="380.0" prefWidth="100.0" />
+            <Separator layoutX="802.0" layoutY="440.0" prefWidth="100.0" />
+            <Separator layoutX="123.0" layoutY="40.0" prefWidth="100.0" />
+            <Separator layoutX="123.0" layoutY="180.0" prefWidth="100.0" />
+            <Separator layoutX="123.0" layoutY="280.0" prefWidth="100.0" />
+            <Separator layoutX="123.0" layoutY="420.0" prefWidth="100.0" />
+            <Separator layoutX="243.0" layoutY="100.0" prefWidth="100.0" />
+            <Separator layoutX="243.0" layoutY="360.0" prefWidth="100.0" />
+            <Separator layoutX="692.0" layoutY="40.0" prefWidth="100.0" />
+            <Separator layoutX="692.0" layoutY="180.0" prefWidth="100.0" />
+            <Separator layoutX="692.0" layoutY="420.0" prefWidth="100.0" />
+            <Separator layoutX="692.0" layoutY="280.0" prefWidth="100.0" />
+            <Separator layoutX="578.0" layoutY="100.0" prefWidth="100.0" />
+            <Separator layoutX="578.0" layoutY="360.0" prefWidth="100.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="382.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@trofy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

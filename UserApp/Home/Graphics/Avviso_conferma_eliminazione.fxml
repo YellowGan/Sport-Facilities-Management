@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="PaneAvviso" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" style="-fx-background-color: #3D5C20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerEliminazioneGiocatori">
+   <children>
+      <Label fx:id="info1" layoutX="63.0" layoutY="100.0" prefHeight="25.0" prefWidth="374.0" text="Sei sicuro di voler eliminare il giocatore selezionato?" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="no" layoutX="307.0" layoutY="170.0" mnemonicParsing="false" onAction="#no" prefHeight="31.0" prefWidth="87.0" text="No" />
+      <ImageView fitHeight="53.0" fitWidth="500.0">
+         <image>
+            <Image url="@SUP.png" />
+         </image>
+      </ImageView>
+      <Separator layoutY="52.0" prefWidth="500.0" />
+      <Button fx:id="si" layoutX="106.0" layoutY="170.0" mnemonicParsing="false" onAction="#si" prefHeight="31.0" prefWidth="87.0" text="Si" />
+      <Label fx:id="confermato" layoutX="63.0" layoutY="125.0" prefHeight="25.0" prefWidth="374.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="ok" layoutX="207.0" layoutY="170.0" mnemonicParsing="false" onAction="#no" prefHeight="31.0" prefWidth="87.0" text="OK" visible="false" />
+   </children>
+</Pane>

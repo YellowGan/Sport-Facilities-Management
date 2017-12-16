@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1218.0" style="-fx-background-color: #3d5c20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.Home.ControllerTorneoClassifica">
+   <top>
+      <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="1024.0">
+               <image>
+                  <Image url="@SUP.png" />
+               </image>
+            </ImageView>
+            <Separator />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Copyright : Di Pietro Nazzareno &amp; Gangemi Salvatore" textFill="WHITE">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nomeTorneo" text="nome torneo" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="tipoTorneo" text="tipo tornelo" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="tastoTabellone" mnemonicParsing="false" onAction="#tastoTabellone" prefHeight="50.0" prefWidth="250.0" text="Calendario partite">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="tornaHome" fitHeight="104.0" fitWidth="118.0" onMouseClicked="#tornaHome" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="75.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@yellow-house.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+            <Label text="TORNA ALLA HOME" textFill="#d6ae51">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TabPane prefHeight="460.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="CLASSIFICA TORNEO">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabClassificaTorneo" prefHeight="431.0" prefWidth="743.0">
+                          <columns>
+                            <TableColumn fx:id="nomeSquadra" prefWidth="188.0" text="Nome Squadra" />
+                            <TableColumn fx:id="puntiSquadra" prefWidth="185.0" text="Punti" />
+                              <TableColumn fx:id="goalFatti" prefWidth="185.0" text="Goal Fatti" />
+                              <TableColumn fx:id="goalSubiti" prefWidth="185.0" text="Goal Subiti" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="CLASSIFICA MARCATORI">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabClassificaMarcatori" prefHeight="431.0" prefWidth="743.0">
+                          <columns>
+                            <TableColumn fx:id="nomeMarcatore" prefWidth="373.0" text="Nome Giocatore" />
+                            <TableColumn fx:id="goalGiocatoreFatti" prefWidth="370.0" text="Goal Fatti" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="CLASSIFICA MIGLIOR PORTIERE">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabClassificaMigliorPortiere" prefHeight="431.0" prefWidth="743.0">
+                           <columns>
+                              <TableColumn fx:id="nomePortiere" prefWidth="373.0" text="Nome Giocatore" />
+                              <TableColumn fx:id="goalPortiereSubiti" prefWidth="370.0" text="Goal Subiti" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="CARTELLINI GIALLI">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabCartelliniGialli" prefHeight="431.0" prefWidth="743.0">
+                           <columns>
+                              <TableColumn fx:id="nomeGiocatoreAmmonito" prefWidth="373.0" text="Nome Giocatore" />
+                              <TableColumn fx:id="numeroGialli" prefWidth="370.0" text="Numero Cartellini Gialli" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="CARTELLINI ROSSI">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabCartelliniRossi" prefHeight="431.0" prefWidth="743.0">
+                           <columns>
+                              <TableColumn fx:id="nomeGiocatoreEspulso" prefWidth="373.0" text="Nome Giocatore" />
+                              <TableColumn fx:id="numeroRossi" prefWidth="370.0" text="Numero Cartellini Rossi" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <BorderPane.margin>
+            <Insets bottom="50.0" left="75.0" right="100.0" top="50.0" />
+         </BorderPane.margin>
+      </TabPane>
+   </center>
+</BorderPane>
